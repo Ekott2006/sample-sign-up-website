@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+}
+
+aside {
+  background: linear-gradient(324.93deg, #007aff 0.74%, #0f70da 100%);
+}
+
+.ellipse {
+  background: linear-gradient(324.93deg, #0f70da 0.74%, #007aff 100%);
+}
+
+/* Custom Checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--form-link-color);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 95% 13%, 80% 0%, 38% 59%);
+  transform: scale(0);
+  background-color: white;
+  position: relative;
+  top: 2px;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
