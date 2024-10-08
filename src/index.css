@@ -49,28 +49,3 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
-
-
-/* Remove Later*/
-@media (max-width: 600px) {
-    body {
-        display: initial;
-
-    }
-    body > *, .heading, .form-control input, form button {
-        width: 100% !important;
-    }
- .ellipse {
-     display: none;
- }
- .form-control {
-     display: block;
-     width: 80vw;
- }
- input[type="checkbox"] {
-     width: auto !important;
- }
- form button {
-     margin: 1rem;
- }
-}
